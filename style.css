@@ -40,8 +40,10 @@ body{
 }
 /* NAV  */
 header{
+    display: -webkit-flex;
     display: flex;
     justify-content: end;
+    -webkit-justify-content: end;
     align-items: center;
     height: 5.5rem;
     width: 80%;
@@ -94,9 +96,9 @@ nav a:hover{
 }
 
 /* MAIN */
-main{
-    /* margin-top:80px; */
-}
+/* main{
+    margin-top:80px;
+} */
 /* BANNER-LOGO */
 .banner{
     width: 80%;
