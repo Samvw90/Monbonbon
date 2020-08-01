@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 ol, ul {
@@ -85,8 +85,8 @@ nav a:hover{
     margin: 0 1.8rem;
 }
 .stripe{
-    width: 10px;
-    height: 3px;
+    width: .7rem;
+    height: .17rem;
     margin: .1rem .5rem;
     background-color: darkblue;
     
@@ -94,7 +94,7 @@ nav a:hover{
 
 /* MAIN */
 main{
-    margin-top:80px;
+    /* margin-top:80px; */
 }
 /* BANNER-LOGO */
 .banner{
