@@ -41,7 +41,7 @@ body{
 /* NAV  */
 header{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     height: 5.5rem;
     width: 80%;
