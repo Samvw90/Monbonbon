@@ -97,9 +97,9 @@ nav a:hover{
 }
 
 /* MAIN */
-/* main{
-    margin-top:80px;
-} */
+main{
+    margin-top:5.5rem;
+}
 /* BANNER-LOGO */
 .banner{
     width: 80%;
@@ -204,4 +204,24 @@ nav a:hover{
     height: 100%;
     width: 46%;
     background-color: #f4f7bf91;
+}
+
+
+
+
+
+.contenedor{
+    width: 80%;
+    height: 8rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+}
+.bola{
+    height: 4rem;
+    width: 4rem;
+    background-color: red;
+    border-radius: 100%;
 }
