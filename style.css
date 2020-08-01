@@ -40,15 +40,16 @@ body{
 }
 /* NAV  */
 header{
-    display: -webkit-flex;
     display: flex;
-    justify-content: end;
-    -webkit-justify-content: end;
+    justify-content: right;
     align-items: center;
     height: 5.5rem;
     width: 80%;
-    position: relative;
+    position: fixed;
     margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 nav{
     display: flex;
