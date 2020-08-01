@@ -22,7 +22,7 @@ table {
 
 body{
     background-color: lightcoral;
-    background: url(/imagenes/MONBOMBONWEB.jpg) no-repeat fixed;
+    background: url(./imagenes/MONBOMBONWEB.jpg) no-repeat fixed;
     background-size: cover;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
