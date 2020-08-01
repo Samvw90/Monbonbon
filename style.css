@@ -82,7 +82,8 @@ nav a:hover{
 }
 /* BURGER */
 .burger{
-    margin: 0 1.8rem;
+    margin: 0 0.1rem;
+    
 }
 .stripe{
     width: .7rem;
