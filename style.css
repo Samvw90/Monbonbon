@@ -1,20 +1,15 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
+/* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
-
 ol, ul {
     list-style: none;
-  }
-
-
-  
+  } 
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -27,17 +22,7 @@ body{
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 1020px) {
-    html {
-      font-size: 15px;
-    }
-  }
 
-@media only screen and (max-width: 800px) {
-    .rayita{
-        display: none;
-    }
-}
 /* NAV  */
 header{
     display: flex;
@@ -50,20 +35,20 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
+    background-color: #ffe3e5bd;
 }
 nav{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 5.5rem;
     margin: 0 auto;
     top: 0;
     left: 0;
     right: 0;
     justify-content: center;
-    position: fixed;
-    background-color: #ffe3e5bd;
-    z-index: 1000;
+    /* position: fixed; */
     overflow: hidden;
     flex-wrap: wrap;
     text-align: center;
@@ -85,15 +70,14 @@ nav a:hover{
 }
 /* BURGER */
 .burger{
-    margin: 0 0.1rem;
-    
+    margin: 0 1.2rem;
+    display: none;
 }
 .stripe{
-    width: .7rem;
-    height: .17rem;
-    margin: .1rem .5rem;
-    background-color: darkblue;
-    
+    width: 2rem;
+    height: .35rem;
+    margin: .3rem .5rem;
+    background-color: black;
 }
 
 /* MAIN */
@@ -145,7 +129,7 @@ main{
     margin-top: 10%;
 }
 .sobre-nosotros h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 3rem;
 }
@@ -157,7 +141,6 @@ main{
     z-index: 3;
 }
 .texto-sobre-nosotros p{
-    
     font-size: 18px;
     text-align: left;
 }
@@ -207,21 +190,40 @@ main{
 }
 
 
+/* MEDIA Q */
 
+@media only screen and (max-width: 1020px) {
+    html {
+      font-size: 15px;
+    }
+  }
 
-
-.contenedor{
-    width: 80%;
-    height: 8rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: black;
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+      }
+    .rayita{
+        display: none;
+    }
+    nav a{
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
 }
-.bola{
-    height: 4rem;
-    width: 4rem;
-    background-color: greenyellow;
-    border-radius: 100%;
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+      }
+    .rayita{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .sobre-nosotros h1{
+        font-size: 2.5rem;
+    }
 }
