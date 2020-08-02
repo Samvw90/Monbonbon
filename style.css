@@ -16,7 +16,9 @@ table {
   }
 
 body{
-    background: url(./imagenes/MONBOMBONWEB.jpg) no-repeat fixed;
+    background: url(./imagenes/MONBOMBONWEB.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
@@ -95,10 +97,13 @@ main{
     align-items: center;
     justify-content: center;
     background-color: #ffe3e5bd;
+    
+    object-fit: fill;
+    overflow: hidden;
 }
 .banner img{
-    width: 100%;
-
+    max-width: 100%;
+    min-width: 375px;
 }
 .banner h1{
     font-size: 100px;
