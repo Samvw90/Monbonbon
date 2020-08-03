@@ -21,7 +21,7 @@ function navDisappear (){
 };
 
 function resize() {
-    if (window.innerWidth >= 605){
+    if (window.innerWidth >= 600){
         nav.style.display = "flex";
         nav.style.flexDirection = "row"; 
         exit.style.display = "none";     
