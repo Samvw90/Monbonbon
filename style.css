@@ -16,7 +16,9 @@ table {
   }
 
 body{
-    background: url(./imagenes/MONBOMBONWEB.jpg);
+    /* background-color:#bd5d63bd; */
+    background-image: linear-gradient(120deg, #853a3fbd, rgb(255, 255, 255));
+    background-image: url(./imagenes/FONDO\ AFICHE.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -37,7 +39,7 @@ body{
     left: 0;
     right: 0;
     z-index: 900;
-    background-color: #ffe3e5bd;
+    background-color: #dbd7f4;
 }
 nav{
     display: flex;
@@ -54,7 +56,19 @@ nav{
     flex-wrap: wrap;
     text-align: center;
     z-index: 1000;
-    background-color: #ffe3e5bd;
+    background-color: #dbd7f4;
+}
+.sobre-nosotros-corazon{
+    top: 1rem;
+    left: 12%;
+    margin: auto;
+    position: fixed;
+    z-index: 20000;
+    opacity: 1;
+    width: 5%;
+}
+.sobre-nosotros-corazon img{
+    width: 100%;
 }
 nav a{
     margin: 0 2rem;
@@ -141,36 +155,22 @@ main{
     flex-direction: column;
 }
 .sobre-nosotros-titulo{
-    width: 60%;
-    margin-left: 15%;
-    margin-top: 10%;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 .sobre-nosotros h1{
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 700;
     line-height: 3rem;
 }
 .sobre-nosotros-parrafo{
-    width: 60%;
-    margin-left: 15%;
-    margin-top: 2%;
-    margin-bottom: 2rem;
+    width: 90%;
+    margin: 2rem auto;
     z-index: 3;
 }
 .texto-sobre-nosotros p{
-    font-size: 18px;
-    text-align: left;
-}
-.sobre-nosotros-corazon{
-    top: 20%;
-    left: 70%;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.7;
-    width: 25%;
-}
-.sobre-nosotros-corazon img{
-    width: 100%;
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 /* MENSAJE SOBRE NOSOTROS  */
@@ -214,7 +214,11 @@ main{
       font-size: 15px;
     }
   }
-
+  @media only screen and (max-width: 895px){
+    .sobre-nosotros-corazon{
+        display: none;
+    }
+  }
 @media only screen and (max-width: 800px) {
     html {
         font-size: 14px;
@@ -222,15 +226,20 @@ main{
     .rayita{
         display: none;
     }
+    nav{
+        display: flex;
+    }
     nav a{
         margin: 0 1rem;
         font-size: 1rem;
     }
-    .exit{display: none;}
+    .exit{
+        display: none;
+    }
 }
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
       }
     .rayita{
         display: none;
@@ -256,6 +265,6 @@ main{
         display: none;
     }
     .sobre-nosotros h1{
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
 }
