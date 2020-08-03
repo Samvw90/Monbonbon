@@ -20,5 +20,20 @@ function navDisappear (){
     console.log('click undido');
 };
 
+function resize() {
+    if (window.innerWidth >= 605){
+        nav.style.display = "flex";
+        nav.style.flexDirection = "row"; 
+        exit.style.display = "none";     
+    } else{
+        nav.style.display = "none";
+        nav.style.flexDirection = "column"; 
+        exit.style.display = "none";
+        burger.style.display = "block"; 
+    }
+}
+
+
 burger.onclick = navAppear;
 exit.onclick = navDisappear;
+window.onresize = resize;

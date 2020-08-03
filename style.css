@@ -90,17 +90,6 @@ nav a:hover{
     margin: 0 1.2rem;
     display: none;
 }
-.exit{
-    margin: 0 1.2rem;
-    display: none;
-    font-size: 2.2rem;
-    font-weight: 700;
-    position: fixed;
-    /* z-index: 10100; */
-    top: 4%;
-    right: 10%;
-    cursor: pointer;
-}
 .stripe{
     width: 2rem;
     height: .35rem;
@@ -218,6 +207,7 @@ main{
     .sobre-nosotros-corazon{
         display: none;
     }
+    .exit{display: none;}
   }
 @media only screen and (max-width: 800px) {
     html {
@@ -226,9 +216,9 @@ main{
     .rayita{
         display: none;
     }
-    nav{
+    /* nav{
         display: flex;
-    }
+    } */
     nav a{
         margin: 0 1rem;
         font-size: 1rem;
@@ -261,7 +251,15 @@ main{
         cursor: pointer;
     }
     .exit{
+        margin: 0 1.2rem;
         display: none;
+        font-size: 2.2rem;
+        font-weight: 700;
+        position: fixed;
+        /* z-index: 10100; */
+        top: 4%;
+        right: 10%;
+        cursor: pointer;
     }
     .sobre-nosotros h1{
         font-size: 1.9rem;
