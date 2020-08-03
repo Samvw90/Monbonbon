@@ -248,7 +248,6 @@ main{
         flex-direction: column;
         height: 100vh;
         display: none;
-        background-color: #ffe3e5bd;
     }
     nav a{
         margin: 2rem;
