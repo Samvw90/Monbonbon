@@ -90,6 +90,9 @@ nav a:hover{
     margin: 0 1.2rem;
     display: none;
 }
+.exit{
+    display: none;
+}
 .stripe{
     width: 2rem;
     height: .35rem;
@@ -235,9 +238,9 @@ main{
         display: none;
     }
     nav{
-        flex-direction: column;
-        height: 100vh;
         display: none;
+        /* flex-direction: column; */
+        height: 100vh;
     }
     nav a{
         margin: 2rem;
