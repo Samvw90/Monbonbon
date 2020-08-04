@@ -198,6 +198,32 @@ main{
     background-color: #f4f7bf91;
 }
 
+/* CONTENEDOR ICONOS */
+.contenedor{
+    width: 80%;
+    /* height: 80vh; */
+    margin: 2rem auto;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #9c72a0b4;
+}
+.icon-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 60vh;
+    width: 70%;
+    margin: 2rem auto;
+}
+.icono{
+    margin: 1rem;
+    min-width: 20%;
+    max-width: 11rem;
+}
+
 
 /* MEDIA Q */
 
