@@ -209,7 +209,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #9c72a0b4;
+    /* background-color: #9c72a0b4; */
 }
 .icon-row{
     height: 100%;
