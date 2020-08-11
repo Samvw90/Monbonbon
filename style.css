@@ -31,7 +31,7 @@ body{
     display: none;
     justify-content: flex-end;
     align-items: center;
-    height: 5.5rem;
+    height: 6.5rem;
     width: 80%;
     position: fixed;
     margin: 0 auto;
@@ -45,7 +45,7 @@ nav{
     display: flex;
     align-items: center;
     width: 80%;
-    height: 5.5rem;
+    height: 6.5rem;
     margin: 0 auto;
     top: 0;
     left: 0;
@@ -59,13 +59,13 @@ nav{
     background-color: #dbd7f4;
 }
 .sobre-nosotros-corazon{
-    top: 1rem;
-    left: 12%;
-    margin: auto;
-    position: fixed;
+    /* top: 1rem; */
+    left: 5%;
+    /* margin:; */
+    position: absolute;
     z-index: 20000;
     opacity: 1;
-    width: 5%;
+    width: 6%;
 }
 .sobre-nosotros-corazon img{
     width: 100%;
@@ -216,14 +216,15 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 70%;
+    width: 100%;
     margin: 3rem auto;
 }
 .icono{
     margin: 1rem;
-    min-width: 20%;
-    max-width: 11rem;
-    max-height: 11rem;
+    /* min-width: 8rem; */
+    /* min-height: 8rem; */
+    width: 12rem;
+    height: 12rem;
 }
 
 
@@ -296,3 +297,9 @@ main{
         font-size: 1.9rem;
     }
 }
+@media only screen and (max-width: 400px) {
+    .icono{
+        width: 10rem;
+        height: 10rem;
+    }
+} 
